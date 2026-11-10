@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SNAI NFT</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#080f32;
+ color:white;
+ font-family:Arial,sans-serif;
+}
+.top{
+ height:65px;
+ background:#142052;
+ display:flex;
+ justify-content:flex-end;
+ align-items:center;
+ padding:15px;
+}
+.lang{
+ background:#009df5;
+ padding:12px 22px;
+ border-radius:30px;
+}
+.banner{
+ height:230px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:10px;
+ overflow:hidden;
+}
+.nft{
+ min-width:125px;
+ height:155px;
+ border-radius:20px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ font-size:65px;
+ background:linear-gradient(135deg,#555b91,#9b5288);
+ transform:rotate(-13deg);
+}
+.nft:nth-child(2){transform:rotate(10deg)}
+.nft:nth-child(3){transform:rotate(-8deg)}
+.logo{
+ text-align:center;
+ font-size:65px;
+ font-weight:900;
+ color:#00aaff;
+ text-shadow:3px 4px #0751a7;
+ margin:55px 0 65px;
+}
+.form{
+ width:80%;
+ max-width:500px;
+ margin:auto;
+}
+input{
+ width:100%;
+ padding:23px;
+ border:0;
+ border-radius:12px;
+ font-size:17px;
+ margin-bottom:30px;
+}
+.remember{
+ display:flex;
+ align-items:center;
+ gap:12px;
+ margin-bottom:75px;
+ font-size:17px;
+}
+.remember input{
+ width:22px;
+ height:22px;
+ margin:0;
+}
+.login{
+ width:100%;
+ padding:20px;
+ background:#0787f8;
+ color:white;
+ border:0;
+ border-radius:12px;
+ font-size:22px;
+ font-weight:bold;
+}
+.register{
+ text-align:center;
+ margin-top:50px;
+ color:#0787f8;
+ font-size:21px;
+ text-decoration:underline;
+ cursor:pointer;
+}
+.note{
+ text-align:center;
+ color:#aab4d0;
+ font-size:12px;
+ margin:50px 10px 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">
+ <div class="lang">Lang</div>
+</div>
+
+<div class="banner">
+ <div class="nft">🐵</div>
+ <div class="nft">🦍</div>
+ <div class="nft">🐵</div>
+</div>
+
+<div class="logo">SNAI</div>
+
+<div class="form">
+
+ <input id="phone"
+ type="text"
+ placeholder="Enter demo user ID">
+
+ <input id="password"
+ type="password"
+ placeholder="Enter demo password">
+
+ <div class="remember">
+  <input type="checkbox" id="remember">
+  Remember demo session
+ </div>
+
+ <button class="login" onclick="login()">
+ Login
+ </button>
+
+ <div class="register" onclick="register()">
+ Register
+ </div>
+
+</div>
+
+<div class="note">
+ SNAI NFT Educational Demo.
+ No real money or investment.
+</div>
+
+<script>
+function login(){
+ const phone=document.getElementById("phone").value;
+ const password=document.getElementById("password").value;
+
+ if(!phone || !password){
+  alert("Please fill both demo fields");
+  return;
+ }
+
+ alert("Welcome to SNAI NFT Demo!");
+}
+
+function register(){
+ alert("Demo registration page coming soon!");
+}
+</script>
+
+</body>
+</html>
